@@ -1,0 +1,107 @@
+﻿.ad-wrapper {
+    border-radius: 3px;
+    background-color: #623015;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 450px;
+    height: 240px;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        left: -800px;
+    }
+
+    100% {
+        left: 10px;
+    }
+}
+
+.ad-info{
+    display: flex;
+}
+
+.ad-img{
+    flex: 1;
+}
+
+.ad-img img{
+    width: 100%;
+    height: 240px!important;
+}
+
+.ad-details{
+    flex: 2;
+    padding-left: 25px;
+    color: white;
+}
+
+.ad-close {
+    background-color: transparent;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 0 30px;
+    color: white;
+}
+
+.close-wrap {
+    text-align: right;
+}
+
+.ad-text h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.ad-text p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.ad-text button {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: #623015;
+    padding: 3px 8px;
+    transition: 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.ad-text button:hover {
+    transform: scale(1.1)
+}
+
+
+@media (max-width: 768px){
+    .ad-wrapper {
+        width: 350px;
+        height: 180px;
+    }
+
+    .ad-img img {
+        height: 180px !important;
+    }
+
+    .ad-text h1 {
+        font-size: 18px;
+    }
+
+    .ad-text p {
+        font-size: 12px;
+    }
+
+    .ad-text button {
+        font-size: 11px;
+    }
+}

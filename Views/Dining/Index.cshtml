@@ -1,0 +1,179 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+
+
+    <link href='~/assets/css/slider.css' rel='stylesheet' />
+}
+
+<section class="pb-0">
+    <div class="carousel">
+        <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slide-image m-cover">
+                    <div class="div-cover-img m-cover">
+                        <img src="~/assets/img/Dining/00 carousel/DSC01643.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-4" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+                <div class="slide-image m-cover">
+                    <div class="div-cover-img m-cover">
+                        <img src="~/assets/img/Dining/00 carousel/dapitan bar.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+                <div class="slide-image m-cover">
+                    <div class="div-cover-img m-cover">
+                        <img src="~/assets/img/Dining/00 carousel/la bella.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-4" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-4" />
+            <li class="slide-container">
+                <div class="slide-image m-cover">
+                    <div class="div-cover-img m-cover">
+                        <img src="~/assets/img/Dining/00 carousel/1O0A7757.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+            </div>
+        </ul>
+    </div>
+</section>
+<main>
+    <div class="container">
+        <div class="col-ms-12 text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="fnt-family-playfair"><strong>DINING</strong></h2>
+            <p class="container fnt-size15 mt-20 mb-20" style="font-size:20px;">
+                Las Casas’ six restaurants and bars offer a delectable range of culinary options to choose from. <br />
+                Whether one chooses to experience local home-style Filipino dishes, <br />
+                traditional Italian cuisine, or freshly-caught grilled seafood and meats,<br />
+                there is something to be enjoyed for every kind of palate.<br />
+            </p>
+
+        </div>
+        <div class="col-md-12 row mt-5" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-md-6 resto  m-mt-20px">
+                <a href="~/Dining/Binondo">
+                    <div class="resto m-resto">
+                        <img src="~/assets/img/Dining/Thumbnails/01 binondo hall.png" class="img-resto m-resto" alt="dining" />
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 resto  m-mt-20px">
+                <a href="~/Dining/CafeDelRio">
+                    <div class="resto m-resto">
+                        <img src="~/assets/img/Dining/restaurant/04Cafedelrio.png" class="img-resto m-resto" alt="dining" />
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-md-12 row mt-20px" data-aos="fade-up" data-aos-delay="200">
+
+
+            <div class="col-md-6 resto  m-mt-20px">
+                <a href="~/Dining/DapitanBar">
+                    <div class="resto m-resto">
+                        <img src="~/assets/img/Dining/restaurant/06DapitanBar.png" class="img-resto m-resto" alt="dining"/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 resto">
+                <a href="~/Dining/KusinaNiNanayMaria">
+                    <div class="resto m-resto">
+                        <img src="~/assets/img/Dining/restaurant/01kusina.png" class="img-resto m-resto" alt="dining" />
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-12 row mt-20px" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6 resto m-mt-20px">
+                <a href="~/Dining/LabellaTeodora">
+                    <div class="resto m-resto">
+                        <img src="~/assets/img/Dining/restaurant/02labella.png" class="img-resto m-resto" alt="dining" />
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 resto">
+                <a href="~/Dining/LaPrillaAndPica">
+                    <div class="resto m-resto">
+                        <img src="~/assets/img/Dining/restaurant/03Laparilla.png" class="img-resto m-resto" alt="dining" />
+                    </div>
+                </a>
+            </div>
+            @*<div class="col-md-6 resto">
+                    <a href="~/Dining/Bespoke">
+                        <div class="resto m-resto">
+                            <img src="~/assets/img/Dining/restaurant/05bespoke1.png" class="img-resto m-resto" />
+                        </div>
+                    </a>
+                </div>*@
+        </div>
+        <div class="col-md-12 mt-100 text-center" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="fnt-family-playfair"><strong>WE LOOK FORWARD TO YOUR VISIT</strong></h4>
+        </div>
+        <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div>
+                <hr style="width:50%; margin-left:25% !important; margin-right:25% !important;" />
+            </div>
+
+        </div>
+
+        <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="200">
+            <p class="fnt-family-playfair"><strong>reservations@lascasasfilipinas.com</strong></p>
+        </div>
+        <div class="col-md-12 text-center mt-5 mb-5" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://staahmax.staah.net/be/index_be?propertyId=MzcxNQ" class="btn-book-now" target="_blank">BOOK NOW</a>
+            @*<input type="submit" class="btn-booknow" value="BOOK NOW" />*@
+        </div>
+    </div>
+</main>
+

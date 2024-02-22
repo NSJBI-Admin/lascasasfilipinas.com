@@ -1,0 +1,78 @@
+﻿.modal {
+    margin-top: 100px;
+}
+
+.modal-dialog {
+    
+}
+
+.modal-body {
+    padding: 0;
+    margin: auto;
+}
+
+.carousel-ad {
+    height: 100%;
+}
+
+ul.slides-ad {
+    display: block;
+    position: relative;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.div-cover-img-ad {
+    height: auto !important;
+    width: 100% !important;
+}
+
+.modal-close {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    left: 0px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+@media (min-width: 1921px) {
+    .modal-body {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1920px) {
+    .modal-body {
+        width: 600px;
+    }
+
+    .modal {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .modal {
+        margin-top: 80px;
+    }
+
+    .modal-body {
+        width: 450px;
+    }
+}
+
+@media (max-width: 820px) {
+    .modal-body {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        width: auto;
+    }
+}

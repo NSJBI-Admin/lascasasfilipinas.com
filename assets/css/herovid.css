@@ -1,0 +1,56 @@
+﻿.carousel {
+    background: #EEE;
+}
+
+.carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+    .carousel-cell.is-selected {
+        background: #ED2;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(carousel-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+    }
+
+
+.heri-tage {
+    background-color: rgba(177, 135, 65, 0.12) !important;
+}
+
+.ratio-2x1 {
+    @include media-breakpoint-up(md) {
+        --bs-aspect-ratio: 50%;
+    }
+}
+.awards {
+    position: relative;
+    margin: -200px 50px 0px 0px;
+    float: right;
+}
+
+@media (max-width: 780px){
+    .awards {
+        position: relative;
+        margin: -160px 20px 0px 50px;
+        float: right;
+    }
+
+    .awards img {
+        width: 100% !important;
+        margin-right: -40px;
+    }
+}
+

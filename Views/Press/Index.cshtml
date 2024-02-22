@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="pb-0">
+    @*<div class="slide-image">
+        <div class="div-cover-img-press">
+            <img src="~/assets/img/Press/conver.png" class="f-and-b m-cover" />
+        </div>
+    </div>*@
+</section>
+<main>
+    <div class="container">
+        <div class="col-ms-12 text-center" data-aos="fade-up" data-aos-delay="200">
+            @*<h2 class="fnt-family-playfair"><strong>PRESS</strong></h2>*@
+            <p class="container fnt-size15 mt-10prcnt press-capt" style="font-size:20px;">
+                Here you can find our latest compilation of press features and be up to date with what’s happening at Las Casas.
+            </p>
+        </div>
+        <div class="col-ms-12 text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="fnt-family-playfair"><strong>CONTACT US</strong></h3>
+            <p class="container fnt-size15 mt-20 mb-20" style="font-family: 'Nunito';font-size:20px;">
+                Press and Media Inquiries, Media Visit and Collaboration<br />
+                pressroom@lascasasfilipinas.com<br />
+                @*Influencer and Blogger Inquiries and Collaboration<br />
+                    pressroom@lascasasfilipinas.com<br />
+                    Marketing Inquiries and Collaboration<br />
+                    brandmarcomm@lascasasfilipinas.com<br />*@
+            </p>
+
+        </div>
+        <div class="col-lg-12 row-press">
+            <div class="col-lg-12 row mt-5" data-aos="fade-up" data-aos-delay="200">
+                @foreach (var item in ViewBag.model)
+                {
+                    <div class="col-md-4 mb-5">
+                        <a href="@item.Link" target="_blank">
+                            <div>
+                                <img src="@item.ImagePath" class="f-and-b-press m-cover-press" alt="press" />
+                                <div class="press" style="width: 100%;">
+                                    <p class="text-center text-press press-date">
+                                        @item.PressDate<br />
+                                    </p>
+
+                                    <div class="press-main text-center">
+                                        <p>
+                                            <span class="a-title">@item.Title</span> <br />
+                                            <a href="@item.Link" class="a-press" target="_blank" style="color: #623015;">@item.WebSource</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</main>

@@ -1,0 +1,382 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+
+
+    <link href='~/assets/css/slider.css' rel='stylesheet' />
+    <link href='~/assets/css/herovid.css' rel='stylesheet' />
+    <link href='~/assets/css/ads.css' rel='stylesheet' />
+    <link href='~/assets/css/ads2.css' rel='stylesheet' />
+
+
+}
+@section Scripts {
+
+
+    @*<script>
+            $('.main-gallery').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
+        </script>*@
+
+    @* closing the ad *@
+    <script>
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+        });
+    </script>
+
+    <script>
+        const ad = document.getElementById("adbox");
+
+        function adClose() {
+            if (ad.style.display === "none") {
+                ad.style.display = "block";
+            }
+            else {
+                ad.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+}
+
+<div class="ad-wrapper" id="adbox">
+    <div class="ad-info">
+        <div class="ad-img">
+            <img src="~/assets/img/Ads/webpop-up.jpg" alt="event image" class="ad-img" />
+        </div>
+        <div class="ad-details">
+            <div class="close-wrap">
+                <button class="ad-close" onclick="adClose()">&times;</button>
+            </div>
+            <div class="ad-text fnt-family-playfair">
+                <h3 class="fnt-family-playfair">LAS CASAS WEDDINGS</h3>
+                <p>crafting an experience <br /> beyond your expectations</p>
+                <a href="https://www.lascasasweddings.com/"><button>learn more</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main id="main">
+
+    <div class="pb-0">
+
+        @* CHANGE THE HERO PAGE CAROUSEL INTO A VIDEO SLIDE *@
+
+        <div class="pb-0">
+            @*<video class="ratio ratio-2x1 pb-0" autoplay="autoplay" muted="muted" loop="loop" playsinline allowfullscreen>
+                    <source src="~/assets/img/video/LCBB-CompressedVid(1).mp4" codecs="avc1.42E01E, mp4a.40.2" type="video/mp4" />
+                </video>
+
+                <div class="awards img-fluid">
+                    <img class="awards-img" src="~/assets/img/HomePage/slider/Award.jpg" alt="award" />
+                </div>*@
+
+            <!--<section>
+            <div class="carousel slide" data-ride="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide-image m-cover">
+                            <div class="div-cover-img m-cover">
+                                <img src="~/assets/img/Dining/dapitanbar/03 Dapitan bar/20220318-MEB_4639.jpg" class="f-and-b m-cover" alt="dining" />
+                            </div>
+                        </div>-->
+            @*<div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>*@
+
+            <!--</li>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <li class="slide-container">
+                            <div class="slide-image m-cover">
+                                <div class="div-cover-img m-cover">
+                                    <img src="~/assets/img/Dining/dapitanbar/03 Dapitan bar/_DSC5163.jpg" class="f-and-b m-cover" alt="dining" />
+                                </div>
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-3" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <li class="slide-container">
+                            <div class="slide-image m-cover">
+                                <div class="div-cover-img m-cover">
+                                    <img src="~/assets/img/Dining/dapitanbar/03 Dapitan bar/dapitan bar.jpg" class="f-and-b m-cover" alt="dining" />
+                                </div>
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-2" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-1" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
+                    </ul>
+                </div>
+            </section>-->
+            @* <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="false"> *@
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item div-cover-img m-cover active">
+                        <img src="~/assets/img/LandingPage/1.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                    <div class="carousel-item div-cover-img m-cover">
+                        <img src="~/assets/img/LandingPage/7.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                    <div class="carousel-item div-cover-img m-cover">
+                        <img src="~/assets/img/LandingPage/3.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+
+                    <div class="carousel-item div-cover-img m-cover">
+                        <img src="~/assets/img/LandingPage/4.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                    <div class="carousel-item div-cover-img m-cover">
+                        <img src="~/assets/img/LandingPage/5.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                    <div class="carousel-item div-cover-img m-cover">
+                        <img src="~/assets/img/LandingPage/2.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+                    <div class="carousel-item div-cover-img m-cover">
+                        <img src="~/assets/img/LandingPage/6.jpg" class="f-and-b m-cover" alt="dining" />
+                    </div>
+
+                    @*<div class="carousel-item div-cover-img m-cover">
+            <img src="~/assets/img/LandingPage/4.jpg" class="f-and-b m-cover" alt="dining" />
+        </div>
+        <div class="carousel-item div-cover-img m-cover active">
+            <img src="~/assets/img/LandingPage/5.jpg" class="f-and-b m-cover" alt="dining" />
+        </div>
+        <div class="carousel-item div-cover-img m-cover active">
+            <img src="~/assets/img/LandingPage/6.jpg" class="f-and-b m-cover" alt="dining" />
+        </div>
+        <div class="carousel-item div-cover-img m-cover active">
+            <img src="~/assets/img/LandingPage/7.jpg" class="f-and-b m-cover" alt="dining" />
+        </div>
+        <div class="carousel-item div-cover-img m-cover active">
+            <img src="~/assets/img/LandingPage/8.jpg" class="f-and-b m-cover" alt="dining" />
+        </div>*@
+                </div>
+            </div>
+
+            @*<div class="awards img-fluid">
+                    <img class="awards-img" src="~/assets/img/HomePage/slider/Award.jpg" alt="award" />
+                </div>*@
+
+        </div>
+    </div>
+
+    <!-- End home -->
+    <section class="pt-0">
+        <div class="row heri-tage">
+            <div class="col-lg-6 m-pl-0 m-pr-0 order-2 order-lg-1">
+                <img src="~/assets/img/HomePage/about/crft.jpg" class="about-img m-cover" alt="homepage" />
+
+            </div>
+            <div class="col-lg-6 text-center mt-100 pl-pr-100 order-1 order-lg-1 m-mt20px m-p20 m-pl-pr-20">
+                <h2 class="font-playfair fw-normal text-black">
+                    Showcasing the best of Filipino service, heritage and craftmanship.
+                    <br />
+                    <br />
+                    Learn more about Las Casas
+                    <br />Bataan
+                    <a href="~/About" class="text-black"><u>here</u></a>
+                </h2>
+                <div class="m-mb-20">
+                    <img src="~/assets/img/HomePage/about/LCHC-logo.png" class="lhc-logo" alt="homepage" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @* 360 WALKTHROUGH *@
+    @*<div id="F_bT4A587K">
+        <script type="text/javascript" async data-short="F_bT4A587K" data-path="tours" data-is-self-hosted="false" width="100%" height="500px" src="https://app.cloudpano.com/public/shareScript.js"></script></div>*@
+
+
+    @*<div class="container mt-5 fw-700 m-mt-20px m-text-center">
+            <h2 class="font-opensans">FEATURES</h2>
+        </div>*@
+    <section id="home" class="d-flex align-items-center justify-content-center pb-0">
+
+        <div class="gallery1 js-flickity mb-5 m-cnt"
+             data-flickity-options='{ "wrapAround": true, "autoPlay": 3500 }'>
+            <div class="gallery1-cell">
+
+                <div class="div-cover-img-flick">
+                    <img src="~/assets/img/HomePage/features/stay.jpg" class="f-and-b-flick" alt="stay" />
+                    <div class="features-1">
+                        <h2 class="exp-title">STAY</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery1-cell">
+
+                <div class="div-cover-img-flick">
+                    <img src="~/assets/img/HomePage/features/exp.jpg" class="f-and-b-flick" alt="stay" />
+                    <div class="features-1">
+                        <h2 class="exp-title">EXPERIENCES</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gallery1-cell">
+                <div class="div-cover-img-flick">
+                    <img src="~/assets/img/HomePage/features/dining.jpg" class="f-and-b-flick" alt="stay" />
+                    <div class="features-1">
+                        <h2 class="exp-title">DINING</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="pb-0 pt-0">
+        <div class="div-cover-img m-cover">
+            <img src="~/assets/img/LandingPage/8.jpg" class="f-and-b m-cover" alt="beach" />
+            <div class="beach">
+                <h2 class="exp-title text-white">
+                    LAS CASAS BEACH
+                </h2>
+                <p class="font-opensans text-white font-size20">
+                    Apart from its charming villages, Las Casas gives you access to a beach complete with a beach bar, <br />
+                    set of activities, and the most wonderful view of the sunset.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @* TESTIMONIES *@
+    @*<section class="pb-5 pt-5">
+            <div class="testimony-title">
+                <h2>TESTIMONIALS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </section>*@
+</main>
+
+        @* Advertisement / Event *@
+        <!--<div id="myModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-body">-->
+        @* ad carousel | auto swipe *@
+    <!--<div id="test1" data-aos="zoom-in" data-aos-delay="300">
+            <div class="d-flex align-items-stretch">
+                <div class="member">
+                    <div class="modal-close">
+                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    </div>-->
+                    @* static pop-up *@
+                  @*<div class="swiper-slide portfolio-container">
+                        <div class="portfolio-wrap">
+                            <img src="~/assets/img/Ads/cny-ad.jpg" class="the-room-img2 m-cover" alt="ad">
+                        </div>
+                    </div>*@
+
+
+                     @* DEFAULT POP-UP AD*@
+                    @*<div class="testimonials-slider swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide portfolio-container">
+                                <div class="portfolio-wrap">
+                                    <img src="~/assets/img/Ads/cny-ad.jpg" class="the-room-img2 m-cover" alt="ad">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide portfolio-container">
+                                <div class="portfolio-wrap">
+                                    <img src="~/assets/img/Ads/VDAY1.jpg" class="the-room-img2 m-cover" alt="ad">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide portfolio-container">
+                                <div class="portfolio-wrap">
+                                    <img src="~/assets/img/Ads/VDAY2.jpg" class="the-room-img2 m-cover" alt="ad">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide portfolio-container">
+                                <div class="portfolio-wrap">
+                                    <img src="~/assets/img/Ads/VDAY3.jpg"    class="the-room-img2 m-cover" alt="ad">
+                                </div>
+                            </div>
+
+
+                        </div>
+                <div class="swiper-pagination"></div>
+            </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<div class="ftr-bg-ht">
+    <div class="container">
+        <div class="col-md-12 row">
+            <div class="col-md-4">
+                <div class="footer-hdr">#MYLASCASASSTORY</div>
+            </div>
+            <div class="col-md-8">
+                <div class="footer-p">Share your Las Casas experiences with us by tagging us at @@lascasasfilipinasdeacuzar</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* New woxo account *@
+
+@*<div data-mc-src="3ef930ed-7ad1-4ae2-a190-3ca57d9874b9#instagram"></div>
+
+    <script src="https://cdn2.woxo.tech/a.js#6356070f3f4a5344f112f48f"
+         async data-usrc>
+     </script>*@
+
+<div loading="lazy"
+     data-mc-src="f62a8b2d-1449-4e7d-aef6-d51bc5a7622d#instagram"></div>
+
+<script src="https://cdn2.woxo.tech/a.js#65964341435a9a2183aca8e2"
+        async data-usrc>
+</script>
+
+
+@*<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-005bf69f-1151-4f27-9fe8-9ab672d9e763"></div>*@
+
+
+<br />
+
+<script src="../../assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../../assets/js/helpers/hs.slick-carousel.js"></script>

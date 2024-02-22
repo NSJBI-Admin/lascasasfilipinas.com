@@ -1,0 +1,619 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #linkGallery {
+            display: none;
+        }
+        .row{
+            vertical-align:middle!important;
+        }
+    </style>
+    <script>
+        function showLink() {
+            var x = document.getElementById("linkGallery");
+            if (x.style.display === "block") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "block";
+            }
+        };
+        function hideLink() {
+            var x = document.getElementById("linkGallery");
+            if (x.style.display === "none") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+        };
+    </script>
+
+
+
+</head>
+<body>
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                @*<h2>check out our gallery</h2>*@
+                <p>GALLERY</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active" onclick="hideLink()">All</li>
+                        <li data-filter=".filter-casas" onclick="hideLink()">Casas</li>
+                        <li data-filter=".filter-resort" onclick="hideLink()">Resort</li>
+                        <li data-filter=".filter-experiences" onclick="hideLink()">Experiences</li>
+                        <li data-filter=".filter-arts" onclick="showLink()">Arts and Craftsmanship</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBonita.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Bonita</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBonita.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Bonita"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/4.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBinondo.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Binondo</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBinondo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Binondo"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/8.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBinondo2.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Binondo</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBinondo2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Binondo"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/10.jpeg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/10.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaLaDrillo2.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa La Drillo</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaLaDrillo2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa La Drillo"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/5.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/1.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/2.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBalayan.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Balayan</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBalayan.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Balayan"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/3.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/4.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/5.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBalayan2.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Balayan</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBalayan2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Balayan"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBalayan3.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Balayan</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBalayan3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Balayan"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/6.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/7.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/8.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/9.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-resort">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Resort/10.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Resort/10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/4.jpeg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaBinondo3.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa Binondo</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaBinondo3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa Binondo"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-casas">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Casas/CasaLaDrillo.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+                            <h4>Casa La Drillo</h4>
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Casas/CasaLaDrillo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa La Drillo"><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/5.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/1.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/2.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/3.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/1.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/6.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/7.jpeg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/8.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/9.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/10.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/9.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/2.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/6.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-experiences">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/Experiences/7.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/Experiences/7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-arts">
+                    <div class="portfolio-wrap">
+                        <img src="~/assets/img/Gallery/ArtsAndCraftsmanship/3.jpg" class="img-fluid porfoolio-img" alt="gallery">
+                        <div class="portfolio-info">
+
+
+                            <div class="portfolio-links">
+                                <a href="~/assets/img/Gallery/ArtsAndCraftsmanship/3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bxs-zoom-in"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div ID="linkGallery" class="col-lg-12 pt-lg-0 order-lg-1 mt-3 content m-pt-0 pl-0 text-center mb-5">
+                <h5 class="font-playfair font-size20 p-3"><a style="color: #603419" href="https://ph.asiatatler.com/life/the-artisans-from-bataan-peninsula" target="_blank">https://ph.asiatatler.com/life/the-artisans-from-bataan-peninsula</a></h5>
+                <h5 class="font-opensans text-black">
+                    <b style="color: #603419">
+                        photography by PACO GUERRERO
+                    </b>
+                </h5>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    @*
+        <script>
+                const current = document.querySelector("#current");
+                const imgs = document.querySelectorAll(".gallery__imgs img");
+                const opacity = 0.6;
+
+                // set first image opacity
+                imgs[0].style.opacity = opacity;
+
+                imgs.forEach((img) => img.addEventListener("click", handleClick));
+
+                function handleClick(e) {
+                    // reset opacity
+                    imgs.forEach((img) => (img.style.opacity = 1));
+                    // change current image to src of clicked image
+                    current.src = e.target.src;
+                    // add fade-in class
+                    current.classList.add("fade-in");
+                    // remove fade-in class
+                    setTimeout(() => current.classList.remove("fade-in"), 500);
+                    // change the opacity to opacity variable
+                    e.target.style.opacity = opacity;
+                }
+
+        </script>*@
+</body>
+</html>
